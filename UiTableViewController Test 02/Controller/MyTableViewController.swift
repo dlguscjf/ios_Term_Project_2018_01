@@ -5,7 +5,7 @@ class MyTableViewController: UITableViewController {
  
     // 데이터 클래스 객체 생성
     var foodStores:[FoodStore] = [
-        FoodStore(name: "늘해랑", image: "01", address: "부산광역시 부산진구 양정1동 350-1", tel: "051-863-6997", menu: "수육백반, 돼지국밥, 순대국밥, 내장국밥", type: "돼지국밥집"),
+        FoodStore(name: "늘해랑", image: "01", address: "부산광역시 부산진구 양정1동 350-1", tel: "051-863-6997", menu: "수육백반: 8500원 \n 돼지국밥 : 6000원 \n 순대국밥 : 6500원 \n 내장국밥 : 6500원", type: "돼지국밥집"),
         FoodStore(name: "번개반점", image: "02", address: "부산광역시 부산진구 양정동 418-282", tel: "051-852-9969", menu: "짜장면, 짬뽕, 짬짜면, 탕수육, 탕짜면, 군만두, 양장피", type: "중화요리"),
         FoodStore(name: "아딸", image: "03", address: "부산광역시 부산진구 양정동 393-18", tel: "051-852-9969", menu: "떡볶이, 오뎅, 떡강정, 핫도그, 튀김", type: "분식점"),
         FoodStore(name: "왕짜장", image: "04", address: "부산광역시 부산진구 양정1동 356-22", tel: "051-863-6997", menu: "짜장면, 짬뽕, 짬짜면, 탕수육, 볶짜면, 군만두, 양장피", type: "중화요리"),
@@ -69,14 +69,6 @@ class MyTableViewController: UITableViewController {
         if segue.identifier == "showDetail" {
             if let indexPath =  tableView.indexPathForSelectedRow {
                 let destinationController = segue.destination as! DetailViewController
-                // 이름 넘기기
-//                destinationController.name = foodStoreNames[indexPath.row]
-//                // 이미지 넘기기
-//                destinationController.cellImage = foodStoreThumbnail[indexPath.row]
-//                destinationController.local1 = foodStoreAddress[indexPath.row]
-//                destinationController.tel1 = foodStoreTel[indexPath.row]
-//                destinationController.menu = foodMenus[indexPath.row]
-//                destinationController.type = foodStoreType[indexPath.row]
                 
                 destinationController.name = foodStores[indexPath.row].name
                 // 이미지 넘기기
@@ -90,12 +82,7 @@ class MyTableViewController: UITableViewController {
         } else if segue.identifier == "totalMapView" {
                 let destinationController = segue.destination as! TotalMapViewController
                     destinationController.totalFoodStores = foodStores
-                // 이미지 넘기기
-                //destinationController.cellImage = foodStoreThumbnail[indexPath.row]
-                //destinationController.locations = foodStores[IndexPath.row
-                //destinationController.tel1 = foodStoreTel[indexPath.row]
-                //destinationController.menu = foodMenus[indexPath.row]
-                //destinationController.type = foodStoreType
+
         }
     }
 }

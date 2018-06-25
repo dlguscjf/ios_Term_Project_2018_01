@@ -24,7 +24,4 @@ class FoodStore {
         self.type = type
     }
     
-//    convenience init() {
-//        self.init(name: "", image: "", address: "", tel: "", menu: "")
-//    }
 }

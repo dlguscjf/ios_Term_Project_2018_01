@@ -20,7 +20,6 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var tel1: String = ""
     var menu: String = ""
     var type: String = ""
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // delegate connection
@@ -52,14 +51,35 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
             return cell
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "detailCell", for: indexPath)
-            cell.textLabel?.text = "메뉴 : " + menu
+            cell.textLabel?.text = "전체 매뉴"
             return cell
         default :
             let cell = tableView.dequeueReusableCell(withIdentifier: "mapCell", for: indexPath) as! MapTableViewCell
             cell.configure(location: local1)
             return cell
         }
-    } 
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // 전화걸기 alert
+        if(indexPath.row == 1){
+        let optionMenu = UIAlertController(title : "전화걸기 : " + name, message: tel1, preferredStyle: .alert)
+        let call = UIAlertController(title : "전화중 " + name, message: tel1, preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "취소", style: .cancel, handler:nil)
+        let callAction = UIAlertAction(title : "전화를 거시겠습니까.", style: .default){
+            (action: UIAlertAction) -> Void in
+            call.addAction(cancelAction)
+            self.present(call, animated: true, completion: nil)
+            }
+        optionMenu.addAction(callAction)
+        optionMenu.addAction(cancelAction)
+            present(optionMenu, animated: true, completion: nil)}
+        else if(indexPath.row == 2){
+            let optionMenu = UIAlertController(title : "전체 매뉴", message: menu, preferredStyle: .alert)
+            let cancelAction = UIAlertAction(title: "취소", style: .cancel, handler:nil)
+        
+            optionMenu.addAction(cancelAction)
+            present(optionMenu, animated: true, completion: nil)}
+    }
 
     //
     // MARK: - Navigation
