@@ -20,16 +20,30 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var tel1: String = ""
     var menu: String = ""
     var type: String = ""
+    var cellimage = [String]()
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+      
         // delegate connection
         detailTableView.delegate = self
         detailTableView.dataSource = self
-        
-        cellImageView.image = UIImage(named: cellImage)
-        self.title = name
-    }
+         cellImageView.image = UIImage(named: cellimage[0])
 
+        self.title = name
+        
+    }
+ 
+    
+    @IBAction func ok(_ sender: Any) {
+        for i in 0 ..< cellimage.count{
+            
+            cellImageView.image = UIImage(named: cellimage[i])
+            sleep(2)
+        }}
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

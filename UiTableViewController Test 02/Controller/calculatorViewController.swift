@@ -162,6 +162,12 @@ class calculatorViewController: UIViewController {
             isNumber = true
         }
 	}
+    @IBAction func clear(_ sender: Any) {
+        text1.text = ""
+        num1 = ""
+        num = ""
+        isNumber = true
+    }
     
 
     

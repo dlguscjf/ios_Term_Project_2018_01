@@ -12,7 +12,6 @@
 		0572C91820C2B39400B79406 /* TotalMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0572C91720C2B39400B79406 /* TotalMapViewController.swift */; };
 		058F274720BEE6CC00271381 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058F274620BEE6CC00271381 /* MapViewController.swift */; };
 		058F274A20BEE70300271381 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 058F274920BEE70300271381 /* MapKit.framework */; };
-		4C15806D20E0D78C0023359E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C15806C20E0D78C0023359E /* StartViewController.swift */; };
 		4CB5D9B520DB7C2F0064B2C4 /* calculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB5D9B420DB7C2F0064B2C4 /* calculatorViewController.swift */; };
 		641A0F0520BBDA36004ECC5A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641A0F0420BBDA36004ECC5A /* DetailViewController.swift */; };
 		648FAC0520B29D5B00ACCE56 /* FoodStoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648FAC0420B29D5B00ACCE56 /* FoodStoreTableViewCell.swift */; };
@@ -29,7 +28,6 @@
 		0572C91720C2B39400B79406 /* TotalMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalMapViewController.swift; sourceTree = "<group>"; };
 		058F274620BEE6CC00271381 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		058F274920BEE70300271381 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		4C15806C20E0D78C0023359E /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		4CB5D9B420DB7C2F0064B2C4 /* calculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatorViewController.swift; sourceTree = "<group>"; usesTabs = 1; };
 		641A0F0420BBDA36004ECC5A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		648FAC0420B29D5B00ACCE56 /* FoodStoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodStoreTableViewCell.swift; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 				741C17F620AC06C400FE6E1E /* MyTableViewController.swift */,
 				641A0F0420BBDA36004ECC5A /* DetailViewController.swift */,
 				4CB5D9B420DB7C2F0064B2C4 /* calculatorViewController.swift */,
-				4C15806C20E0D78C0023359E /* StartViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -209,7 +206,6 @@
 				0572C91820C2B39400B79406 /* TotalMapViewController.swift in Sources */,
 				0572C91620C26BB100B79406 /* MapTableViewCell.swift in Sources */,
 				741C17F720AC06C400FE6E1E /* MyTableViewController.swift in Sources */,
-				4C15806D20E0D78C0023359E /* StartViewController.swift in Sources */,
 				058F274720BEE6CC00271381 /* MapViewController.swift in Sources */,
 				4CB5D9B520DB7C2F0064B2C4 /* calculatorViewController.swift in Sources */,
 				641A0F0520BBDA36004ECC5A /* DetailViewController.swift in Sources */,
