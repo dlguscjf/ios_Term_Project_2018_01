@@ -23,6 +23,8 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var cellimage = [String]()
     var count = 0
     var myTimer = Timer()
+    var ck = true
+    
   
  
     
@@ -45,15 +47,21 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     
     @IBAction func ok(_ sender: Any) {
-    
-    myTimer = Timer.scheduledTimer(withTimeInterval: 5, repeats: true, block: {(myTimer) in self.updateTime()})
-        print(count)
+        if ck{
+             ck = false
+            myTimer = Timer.scheduledTimer(withTimeInterval: 3, repeats: true, block: {(myTimer) in self.updateTime()})
+           
+        }
+        else{
+            myTimer.invalidate();
+            ck = true
+        }
     
 
      }
     func updateTime(){
         if count < cellimage.count{
-            
+            print(cellimage[count])
             cellImageView.image = UIImage(named: cellimage[count])
             count = count + 1
         

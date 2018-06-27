@@ -187,9 +187,8 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxv-zQ-m11">
-                                <rect key="frame" x="313" y="325" width="46" height="30"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="291"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="ok:" destination="rTk-ZX-IXD" eventType="touchUpInside" id="Dog-2r-Ljg"/>
                                 </connections>
@@ -223,7 +222,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lTd-kS-vSv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1956" y="-83"/>
+            <point key="canvasLocation" x="1956" y="-83.208395802098963"/>
         </scene>
         <!--Calculator View Controller-->
         <scene sceneID="seg-6w-R3T">
