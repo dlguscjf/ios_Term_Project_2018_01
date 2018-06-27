@@ -21,7 +21,10 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var menu: String = ""
     var type: String = ""
     var cellimage = [String]()
-
+    var count = 0
+    var myTimer = Timer()
+  
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,16 +36,38 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
          cellImageView.image = UIImage(named: cellimage[0])
 
         self.title = name
+      
         
+        
+
     }
- 
+
+    
     
     @IBAction func ok(_ sender: Any) {
-        for i in 0 ..< cellimage.count{
+    
+    myTimer = Timer.scheduledTimer(withTimeInterval: 5, repeats: true, block: {(myTimer) in self.updateTime()})
+        print(count)
+    
+
+     }
+    func updateTime(){
+        if count < cellimage.count{
             
+            cellImageView.image = UIImage(named: cellimage[count])
+            count = count + 1
+        
+        }
+        if count == cellimage.count{
+            count = 0
+        }
+    }
+    
+    func count(i : Int) {
+        
             cellImageView.image = UIImage(named: cellimage[i])
-            sleep(2)
-        }}
+        
+        }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
