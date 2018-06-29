@@ -17,15 +17,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0d2-rK-HeZ">
-                                <rect key="frame" x="126" y="244" width="122" height="82"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main" translatesAutoresizingMaskIntoConstraints="NO" id="zZp-6y-EC7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DIT 배달통" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6FI-wg-5jH">
+                                <rect key="frame" x="89" y="97" width="197" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zZp-6y-EC7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1O5-r3-5Es"/>
+                            <constraint firstItem="zZp-6y-EC7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="OWm-6t-C1E"/>
+                            <constraint firstItem="zZp-6y-EC7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XLr-4c-MBG"/>
+                            <constraint firstItem="zZp-6y-EC7" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="eZf-Ij-T67"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -34,4 +43,7 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="main" width="281" height="179"/>
+    </resources>
 </document>
