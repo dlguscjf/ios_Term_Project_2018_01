@@ -26,6 +26,4 @@ App Icons
 ------
 
 <img width="289" alt="foodstoreicon" src="https://user-images.githubusercontent.com/1857075/41238480-fdf530d6-6dd0-11e8-8d04-e09160f05ba5.png">
-<img width="1041" alt="2018-06-11 11 39 53" src="https://user-images.githubusercontent.com/1857075/41238489-ffabd524-6dd0-11e8-9af2-84656b2fc80e.png">
-
 ---
