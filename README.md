@@ -1,6 +1,7 @@
 # DIT FoodStore Finder v0.2
 ---------------
 UpDate내용
+
 1.아이콘 변경.
 
 2.LaunchScreen 변경.
@@ -9,6 +10,9 @@ UpDate내용
 
 4.상세 화면에서 계산기 화면으로 이동.
 
+5.상세 화면에서 전체 메뉴를 누르면 메뉴 전체가 나옴
+
+6.전화번호를 누르면 통화중이 나옴
 
 ------------
 Source Screenshots
